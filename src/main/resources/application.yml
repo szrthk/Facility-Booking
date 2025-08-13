@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: facility-booking
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/facility_booking_dev
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
